@@ -9,6 +9,8 @@
 #import "LWLogQueue.h"
 #import "LWLogStorage.h"
 
+#import <UIKit/UIKit.h>
+
 @implementation LWLogQueue
 
 
@@ -20,10 +22,20 @@
         dque.maxsize = 11;
         
         [dque createQueue];
+        [[NSNotificationCenter defaultCenter] addObserver:dque selector:@selector(notificactionDual:)
+            name:UIApplicationDidEnterBackgroundNotification object:nil];
+
     });
     return dque;
 }
 
+-(void)notificactionDual:(NSNotification*)not{
+    NSLog(@"通知处理");
+    if ([not.name isEqual:UIApplicationDidEnterBackgroundNotification]) {
+        [self updateFileWhenTranverse];
+    }
+    
+}
 -(void)createQueue{
     self.queue = [[LWLQueue alloc]init];
     self.queue.logData= [NSMutableArray array];
