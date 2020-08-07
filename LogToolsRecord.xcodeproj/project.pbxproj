@@ -19,6 +19,7 @@
 		3D8E3D8024DC074F003043FD /* LWLQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E3D7F24DC074F003043FD /* LWLQueue.m */; };
 		3D8E3D8324DC0D0F003043FD /* LWLogStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E3D8224DC0D0F003043FD /* LWLogStorage.m */; };
 		3D8E3D8924DCFE78003043FD /* LWLogListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E3D8824DCFE78003043FD /* LWLogListViewController.m */; };
+		3D8E3D8C24DD0800003043FD /* LWLogDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E3D8B24DD0800003043FD /* LWLogDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,8 @@
 		3D8E3D8524DCE113003043FD /* LWLogObjcConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWLogObjcConst.h; sourceTree = "<group>"; };
 		3D8E3D8724DCFE78003043FD /* LWLogListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWLogListViewController.h; sourceTree = "<group>"; };
 		3D8E3D8824DCFE78003043FD /* LWLogListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWLogListViewController.m; sourceTree = "<group>"; };
+		3D8E3D8A24DD0800003043FD /* LWLogDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWLogDetailViewController.h; sourceTree = "<group>"; };
+		3D8E3D8B24DD0800003043FD /* LWLogDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWLogDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 			children = (
 				3D8E3D8724DCFE78003043FD /* LWLogListViewController.h */,
 				3D8E3D8824DCFE78003043FD /* LWLogListViewController.m */,
+				3D8E3D8A24DD0800003043FD /* LWLogDetailViewController.h */,
+				3D8E3D8B24DD0800003043FD /* LWLogDetailViewController.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -195,6 +200,7 @@
 				3D8E3D7124DBF712003043FD /* main.m in Sources */,
 				3D8E3D8324DC0D0F003043FD /* LWLogStorage.m in Sources */,
 				3D8E3D6324DBF709003043FD /* SceneDelegate.m in Sources */,
+				3D8E3D8C24DD0800003043FD /* LWLogDetailViewController.m in Sources */,
 				3D8E3D7924DBFF25003043FD /* LWLogGenerator.m in Sources */,
 				3D8E3D7D24DC0569003043FD /* LWLogQueue.m in Sources */,
 				3D8E3D8024DC074F003043FD /* LWLQueue.m in Sources */,

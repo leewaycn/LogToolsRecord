@@ -8,6 +8,7 @@
 
 #import "LWLogListViewController.h"
 #import "LWLogObjcConst.h"
+#import "LWLogDetailViewController.h"
 
 @interface LWLogListViewController ()
 <
@@ -119,7 +120,10 @@ UITableViewDataSource
 
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+    LWLogDetailViewController *vc =[LWLogDetailViewController new];
+    vc.logFilePath  = [[[LWLogStorage share] getCachePath] stringByAppendingPathComponent:self.list[indexPath.row]];
+    [self presentViewController:vc animated:YES completion:nil];
+
     
 }
 
@@ -127,17 +131,6 @@ UITableViewDataSource
 
 
 
-
-
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ 
 
 @end
