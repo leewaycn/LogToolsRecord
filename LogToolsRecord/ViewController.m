@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 #import "LWLogObjcConst.h"
+#import "LWLogListViewController.h"
 
 
 @interface ViewController ()
@@ -37,6 +38,12 @@
     
     
 }
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    LWLogListViewController *vc = [LWLogListViewController new];
+    [self presentViewController:vc animated:YES completion:nil];
+}
+
 
 
 @end

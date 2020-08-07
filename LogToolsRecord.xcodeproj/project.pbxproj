@@ -18,6 +18,7 @@
 		3D8E3D7D24DC0569003043FD /* LWLogQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E3D7C24DC0569003043FD /* LWLogQueue.m */; };
 		3D8E3D8024DC074F003043FD /* LWLQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E3D7F24DC074F003043FD /* LWLQueue.m */; };
 		3D8E3D8324DC0D0F003043FD /* LWLogStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E3D8224DC0D0F003043FD /* LWLogStorage.m */; };
+		3D8E3D8924DCFE78003043FD /* LWLogListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E3D8824DCFE78003043FD /* LWLogListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,8 @@
 		3D8E3D8124DC0D0F003043FD /* LWLogStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWLogStorage.h; sourceTree = "<group>"; };
 		3D8E3D8224DC0D0F003043FD /* LWLogStorage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWLogStorage.m; sourceTree = "<group>"; };
 		3D8E3D8524DCE113003043FD /* LWLogObjcConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWLogObjcConst.h; sourceTree = "<group>"; };
+		3D8E3D8724DCFE78003043FD /* LWLogListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWLogListViewController.h; sourceTree = "<group>"; };
+		3D8E3D8824DCFE78003043FD /* LWLogListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWLogListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,7 @@
 				3D8E3D6224DBF709003043FD /* SceneDelegate.m */,
 				3D8E3D6424DBF709003043FD /* ViewController.h */,
 				3D8E3D6524DBF709003043FD /* ViewController.m */,
+				3D8E3D8624DCFD1E003043FD /* UI */,
 				3D8E3D7A24DBFF2A003043FD /* LogRecordTool */,
 				3D8E3D6724DBF709003043FD /* Main.storyboard */,
 				3D8E3D6A24DBF712003043FD /* Assets.xcassets */,
@@ -104,6 +108,15 @@
 				3D8E3D7F24DC074F003043FD /* LWLQueue.m */,
 			);
 			path = LogRecordTool;
+			sourceTree = "<group>";
+		};
+		3D8E3D8624DCFD1E003043FD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3D8E3D8724DCFE78003043FD /* LWLogListViewController.h */,
+				3D8E3D8824DCFE78003043FD /* LWLogListViewController.m */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +198,7 @@
 				3D8E3D7924DBFF25003043FD /* LWLogGenerator.m in Sources */,
 				3D8E3D7D24DC0569003043FD /* LWLogQueue.m in Sources */,
 				3D8E3D8024DC074F003043FD /* LWLQueue.m in Sources */,
+				3D8E3D8924DCFE78003043FD /* LWLogListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +341,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 77NG6DRZ2U;
 				INFOPLIST_FILE = LogToolsRecord/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,6 +359,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 77NG6DRZ2U;
 				INFOPLIST_FILE = LogToolsRecord/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
